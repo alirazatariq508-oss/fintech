@@ -1,0 +1,6 @@
+{
+  "name": "Fintech Edge Institute",
+  "description": "Official FinTech, Blockchain, Web3 & AI learning platform with course catalog, curriculum details, student portal, and master Claude prompt generator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
