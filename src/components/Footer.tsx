@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { LOGO_IMAGE_URL } from './Header';
 import { 
   GraduationCap, 
   Mail, 
@@ -45,10 +46,10 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenPromptModal 
               className="flex items-center gap-3 cursor-pointer group w-fit"
             >
               <img 
-                src="/logo.png" 
+                src={LOGO_IMAGE_URL} 
                 onError={(e) => {
                   const target = e.currentTarget;
-                  if (target.src.endsWith('/logo.png')) {
+                  if (target.src !== '/logo.svg' && target.src !== '/logo.png') {
                     target.src = '/logo.svg';
                   }
                 }}

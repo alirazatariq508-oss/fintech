@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import logoAsset from '../assets/logo.svg';
+
+// 💡 LOGO IMAGE LINK: Apni image ka import link / URL yahan paste ya change kar sakte hain:
+export const LOGO_IMAGE_URL = logoAsset; // Or use: 'https://your-image-url.com/logo.png' or '/logo.png'
 import { 
   GraduationCap, 
   Search, 
@@ -55,11 +59,11 @@ export const Header: React.FC<HeaderProps> = ({
           className="flex items-center gap-3 cursor-pointer group"
         >
           <img 
-            src="/logo.png" 
+            src={LOGO_IMAGE_URL} 
             onError={(e) => {
               const target = e.currentTarget;
-              if (target.src.endsWith('/logo.png')) {
-                target.src = '/fintech-logo.png';
+              if (target.src !== '/logo.svg' && target.src !== '/logo.png') {
+                target.src = '/logo.svg';
               }
             }}
             alt="Fintech Edge Institute Logo" 
