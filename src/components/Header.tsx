@@ -54,17 +54,18 @@ export const Header: React.FC<HeaderProps> = ({
           onClick={() => setActiveTab('home')} 
           className="flex items-center gap-3 cursor-pointer group"
         >
-          <div className="w-10 h-10 rounded-xl bg-[#0fa1a7] text-white flex items-center justify-center shadow-md shadow-[#0fa1a7]/20 group-hover:scale-105 transition-transform duration-200">
-            <GraduationCap className="w-6 h-6 text-white font-bold" />
-          </div>
-          <div>
-            <span className="text-xl font-extrabold tracking-tight text-slate-900">
-              Fintech Edge
-            </span>
-            <span className="text-xs uppercase tracking-widest block font-bold text-[#0fa1a7] -mt-1">
-              Institute
-            </span>
-          </div>
+          <img 
+            src="/logo.png" 
+            onError={(e) => {
+              const target = e.currentTarget;
+              if (target.src.endsWith('/logo.png')) {
+                target.src = '/logo.svg';
+              }
+            }}
+            alt="Fintech Edge Institute Logo" 
+            referrerPolicy="no-referrer"
+            className="h-10 sm:h-12 w-auto object-contain max-h-12 group-hover:scale-105 transition-transform duration-200"
+          />
         </div>
 
         {/* Desktop Navigation */}
