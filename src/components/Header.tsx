@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logoAsset from '../assets/fintec-logo.png';
+import logoAsset from '../assets/fintec-logo.png.jpeg';
 
 // 💡 LOGO IMAGE LINK: Apni image ka import link / URL yahan paste ya change kar sakte hain:
 export const LOGO_IMAGE_URL = logoAsset; // Or use: 'https://your-image-url.com/logo.png' or '/logo.png'
