@@ -59,7 +59,7 @@ export const Header: React.FC<HeaderProps> = ({
             onError={(e) => {
               const target = e.currentTarget;
               if (target.src.endsWith('/logo.png')) {
-                target.src = '/logo.svg';
+                target.src = '/fintech-logo.png';
               }
             }}
             alt="Fintech Edge Institute Logo" 
