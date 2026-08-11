@@ -4,7 +4,10 @@ import {
   CheckCircle
 } from 'lucide-react';
 import { Course } from '../types';
-import heroBgImage from '../assets/images/fintech_hero_bg_1786103291658.jpg';
+import aiHeroBgImage from '../assets/images/ai_fintech_hero_bg_1786443386187.jpg';
+
+// 💡 HERO BACKGROUND IMAGE LINK: Apni background image ka import link / URL yahan paste ya change kar sakte hain:
+export const HERO_BG_IMAGE_URL = aiHeroBgImage; // Or use: 'https://images.unsplash.com/...' or custom image path
 
 interface CounterStatProps {
   end: number;
@@ -69,10 +72,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         {/* Clear Background Image with object-cover */}
         <img
-          src={heroBgImage}
-          alt="Fintech Background"
+          src={HERO_BG_IMAGE_URL}
+          alt="AI & FinTech Hero Background"
           referrerPolicy="no-referrer"
-          className="w-full h-full object-cover opacity-85 transition-opacity duration-300"
+          className="w-full h-full object-cover opacity-80 transition-opacity duration-300"
         />
         {/* Subtle overlay for text contrast without white side shadows */}
         <div className="absolute inset-0 bg-white/30 backdrop-blur-[1px]" />
