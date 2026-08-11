@@ -87,8 +87,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="absolute bottom-10 left-10 w-64 h-64 bg-teal-400/10 rounded-full blur-2xl pointer-events-none animate-pulse" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Text Container without background shade so the background image shows completely */}
-        <div className="max-w-4xl mx-auto text-center space-y-6 bg-transparent p-2 sm:p-4">
+        {/* Sleek Light Glass Card with Minimal White Shade for Maximum Background Picture Visibility */}
+        <div className="max-w-4xl mx-auto text-center space-y-6 bg-white/25 sm:bg-white/30 backdrop-blur-md p-6 sm:p-10 rounded-3xl border border-white/50 shadow-2xl shadow-slate-900/10">
           
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-slate-950 drop-shadow-[0_1px_3px_rgba(255,255,255,0.9)]">
