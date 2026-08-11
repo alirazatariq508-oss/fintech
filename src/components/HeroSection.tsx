@@ -68,30 +68,31 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
   return (
     <section className="relative bg-[#f8fafc] text-slate-900 pt-12 pb-20 lg:pt-20 lg:pb-28 border-b border-slate-300 overflow-hidden">
-      {/* Animated Background Image & High-Contrast Glass Overlay */}
+      {/* Animated Background Image & Vibrant Overlay */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         {/* Clear Background Image with object-cover */}
         <img
           src={HERO_BG_IMAGE_URL}
           alt="AI & FinTech Hero Background"
           referrerPolicy="no-referrer"
-          className="w-full h-full object-cover opacity-35 mix-blend-multiply transition-opacity duration-300"
+          className="w-full h-full object-cover opacity-85 transition-opacity duration-300"
         />
-        {/* High-legibility gradient overlay with subtle blur to guarantee sharp text reading */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#f8fafc]/90 via-[#f8fafc]/80 to-[#f8fafc]/95 backdrop-blur-[2px]" />
+        {/* Soft gradient edges for smooth section integration without hiding the main picture */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-[#f8fafc]" />
       </div>
 
       {/* Floating Animated Geometric/Glowing Orbs */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-tr from-[#0fa1a7]/20 via-teal-500/15 to-transparent blur-3xl pointer-events-none rounded-full animate-pulse" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-tr from-[#0fa1a7]/15 via-teal-500/10 to-transparent blur-3xl pointer-events-none rounded-full animate-pulse" />
       <div className="absolute top-10 right-10 w-72 h-72 bg-[#0fa1a7]/10 rounded-full blur-2xl pointer-events-none animate-bounce duration-[10000ms]" />
       <div className="absolute bottom-10 left-10 w-64 h-64 bg-teal-400/10 rounded-full blur-2xl pointer-events-none animate-pulse" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
+        {/* Central Frosted Glass Card to ensure 100% text legibility over the clear background image */}
+        <div className="max-w-4xl mx-auto text-center space-y-6 bg-white/75 backdrop-blur-md p-6 sm:p-10 rounded-3xl border border-white/80 shadow-xl shadow-slate-900/5">
           
           {/* Main Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-slate-900 drop-shadow-sm">
-            Master <span className="text-[#0fa1a7] drop-shadow-sm">FinTech</span>, Blockchain, <span className="text-[#0fa1a7] drop-shadow-sm">Web3</span> & AI
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-slate-900">
+            Master <span className="text-[#0fa1a7]">FinTech</span>, Blockchain, <span className="text-[#0fa1a7]">Web3</span> & AI
           </h1>
 
           {/* Subtitle */}
